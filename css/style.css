@@ -247,7 +247,7 @@ body { line-height: 1.6; }
 .faq-panel p { padding: 0 20px 18px; }
 .faq-panel.open { grid-template-rows: 1fr; }
 
-/* ---------- Animasi: foto hero melayang pelan ---------- */
+/* --------- Animasi: foto hero melayang pelan --------- */
 .hero-img { animation: float 5s ease-in-out infinite; }
 @keyframes float {
   0%, 100% { transform: translateY(0); }
