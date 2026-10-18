@@ -190,68 +190,7 @@
       </div>
     </section>
 
-    <section id="booking" class="bg-white py-16">
-      <div class="mx-auto grid max-w-6xl gap-10 px-5 md:grid-cols-2">
-        <div>
-          <div class="sec-head">
-            <h2>Booking Grooming</h2>
-            <p>Isi formulir singkat ini untuk mengatur jadwal perawatan.</p>
-          </div>
-          <div class="rounded-2xl bg-cream p-6 shadow-md">
-            <h3 class="font-heading font-semibold">Jam operasional</h3>
-            <ul class="mt-2 space-y-1 text-sm">
-              <li>Senin–Sabtu: 09.00–20.00 WIB</li>
-              <li>Minggu: 10.00–17.00 WIB</li>
-            </ul>
-            <p class="mt-4 text-sm">Melayani kucing dan anjing. Hewan harus dalam kondisi sehat.</p>
-          </div>
-        </div>
-
-        <div class="rounded-2xl bg-cream p-6 shadow-md">
-          <form id="booking-form" novalidate>
-            <div class="mb-4">
-              <label for="owner" class="mb-1 block text-sm font-bold">Nama pemilik</label>
-              <input id="owner" name="owner" type="text" placeholder="Nama lengkap" autocomplete="name"
-                     class="w-full rounded-xl border border-peach bg-white px-4 py-3 outline-none focus:border-teal">
-              <p class="field-error" id="err-owner" role="alert"></p>
-            </div>
-
-            <div class="mb-4 grid gap-4 sm:grid-cols-2">
-              <div>
-                <label for="pet" class="mb-1 block text-sm font-bold">Jenis hewan</label>
-                <select id="pet" name="pet" class="w-full rounded-xl border border-peach bg-white px-4 py-3 outline-none focus:border-teal">
-                  <option value="">Pilih hewan</option>
-                  <option value="Kucing">Kucing</option>
-                  <option value="Anjing">Anjing</option>
-                </select>
-                <p class="field-error" id="err-pet" role="alert"></p>
-              </div>
-              <div>
-                <label for="service" class="mb-1 block text-sm font-bold">Jenis layanan</label>
-                <select id="service" name="service" class="w-full rounded-xl border border-peach bg-white px-4 py-3 outline-none focus:border-teal">
-                  <option value="">Pilih paket</option>
-                </select>
-                <p class="field-error" id="err-service" role="alert"></p>
-              </div>
-            </div>
-
-            <div class="mb-6">
-              <label for="date" class="mb-1 block text-sm font-bold">Tanggal booking</label>
-              <input id="date" name="date" type="date"
-                     class="w-full rounded-xl border border-peach bg-white px-4 py-3 outline-none focus:border-teal">
-              <p class="field-error" id="err-date" role="alert"></p>
-            </div>
-
-            <button type="submit" class="rounded-full bg-paw px-6 py-3 font-bold text-white transition hover:-translate-y-0.5 hover:bg-paw-dark">Kirim Booking</button>
-          </form>
-
-          <div id="booking-success" class="mt-5 hidden rounded-xl bg-mint p-4 text-sm" role="status">
-            <p class="font-bold text-teal">Booking berhasil!</p>
-            <p id="booking-summary" class="mt-1"></p>
-          </div>
-        </div>
-      </div>
-    </section>
+   
 
     <section id="galeri" class="py-16">
       <div class="mx-auto max-w-6xl px-5">
