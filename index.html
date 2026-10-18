@@ -6,11 +6,9 @@
   <title>PawCare – Pet Shop & Grooming</title>
   <meta name="description" content="PawCare menyediakan perlengkapan hewan peliharaan pilihan dan layanan grooming untuk kucing dan anjing.">
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -27,12 +25,10 @@
     }
   </script>
 
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-cream font-body text-ink">
-
 
   <header class="sticky top-0 z-40 bg-white shadow-sm">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3" aria-label="Navigasi utama">
@@ -50,12 +46,14 @@
         </span>
       </a>
 
+      <!-- Menu Desktop -->
       <ul class="hidden items-center gap-6 text-sm font-semibold md:flex">
         <li><a class="hover:text-paw" href="#beranda">Beranda</a></li>
         <li><a class="hover:text-paw" href="#produk">Produk</a></li>
         <li><a class="hover:text-paw" href="#grooming">Grooming</a></li>
         <li><a class="hover:text-paw" href="#booking">Booking</a></li>
         <li><a class="hover:text-paw" href="#galeri">Galeri</a></li>
+        <li><a class="hover:text-paw" href="#testimoni">Testimoni</a></li>
         <li><a class="hover:text-paw" href="#faq">FAQ</a></li>
       </ul>
 
@@ -63,7 +61,6 @@
          class="hidden rounded-full bg-paw px-5 py-2 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-paw-dark md:inline-block">
         Booking Sekarang
       </a>
-
 
       <button id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Buka menu"
               class="grid h-10 w-10 place-items-center rounded-full text-ink md:hidden">
@@ -73,7 +70,7 @@
       </button>
     </nav>
 
-
+    <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden border-t border-peach bg-white px-5 pb-4 md:hidden">
       <ul class="flex flex-col gap-1 py-2 font-semibold">
         <li><a class="block rounded-lg px-2 py-2 hover:bg-cream" href="#beranda">Beranda</a></li>
@@ -81,6 +78,7 @@
         <li><a class="block rounded-lg px-2 py-2 hover:bg-cream" href="#grooming">Grooming</a></li>
         <li><a class="block rounded-lg px-2 py-2 hover:bg-cream" href="#booking">Booking</a></li>
         <li><a class="block rounded-lg px-2 py-2 hover:bg-cream" href="#galeri">Galeri</a></li>
+        <li><a class="block rounded-lg px-2 py-2 hover:bg-cream" href="#testimoni">Testimoni</a></li>
         <li><a class="block rounded-lg px-2 py-2 hover:bg-cream" href="#faq">FAQ</a></li>
       </ul>
       <a href="#booking" class="block rounded-full bg-paw px-5 py-3 text-center font-bold text-white hover:bg-paw-dark">Booking Sekarang</a>
@@ -88,7 +86,6 @@
   </header>
 
   <main>
-
 
     <section id="beranda" class="bg-cream py-16">
       <div class="mx-auto grid max-w-6xl items-center gap-10 px-5 md:grid-cols-2">
@@ -117,7 +114,6 @@
         </div>
       </div>
     </section>
-
 
     <section id="keunggulan" class="bg-white py-16">
       <div class="mx-auto max-w-6xl px-5">
@@ -157,7 +153,6 @@
         </div>
       </div>
     </section>
-
   
     <section id="produk" class="py-16">
       <div class="mx-auto max-w-6xl px-5">
@@ -185,7 +180,6 @@
       </div>
     </section>
 
-
     <section id="grooming" class="bg-mint py-16">
       <div class="mx-auto max-w-6xl px-5">
         <div class="sec-head">
@@ -195,7 +189,6 @@
         <div id="grooming-list" class="grid items-stretch gap-6 md:grid-cols-3"></div>
       </div>
     </section>
-
 
     <section id="booking" class="bg-white py-16">
       <div class="mx-auto grid max-w-6xl gap-10 px-5 md:grid-cols-2">
@@ -260,7 +253,6 @@
       </div>
     </section>
 
-
     <section id="galeri" class="py-16">
       <div class="mx-auto max-w-6xl px-5">
         <div class="sec-head">
@@ -271,86 +263,82 @@
       </div>
     </section>
 
-
-
-  <!-- ===== TESTIMONI ===== -->
-<section id="testimoni" class="bg-white py-16">
-  <div class="mx-auto max-w-6xl px-5">
-    <div class="sec-head">
-      <h2>Kata Mereka tentang PawCare</h2>
-      <p>Cerita dari pelanggan yang sudah mempercayakan hewannya kepada kami.</p>
-    </div>
-
-    <div class="grid gap-6 md:grid-cols-3">
-
-      <!-- Ulasan 1 -->
-      <figure class="flex flex-col rounded-2xl bg-cream p-6 shadow-md transition hover:shadow-lg">
-        <div class="flex gap-1 text-paw" role="img" aria-label="Rating 5 dari 5 bintang">
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+    <!-- ===== TESTIMONI ===== -->
+    <section id="testimoni" class="bg-white py-16">
+      <div class="mx-auto max-w-6xl px-5">
+        <div class="sec-head">
+          <h2>Kata Mereka tentang PawCare</h2>
+          <p>Cerita dari pelanggan yang sudah mempercayakan hewannya kepada kami.</p>
         </div>
-        <blockquote class="mt-4 flex-1 text-sm leading-relaxed">
-          “Kucing saya biasanya stres kalau dimandikan, tapi di PawCare dia tenang dan pulang dalam keadaan wangi. Timnya sabar sekali.”
-        </blockquote>
-        <figcaption class="mt-6 flex items-center gap-3">
-          <span class="grid h-12 w-12 flex-none place-items-center rounded-full bg-peach font-heading font-bold text-paw-dark" aria-hidden="true">AR</span>
-          <span class="leading-tight">
-            <span class="block font-heading font-semibold">Anisa Rahma</span>
-            <span class="block text-xs text-ink/70">Pemilik kucing Persia</span>
-          </span>
-        </figcaption>
-      </figure>
 
-      <!-- Ulasan 2 -->
-      <figure class="flex flex-col rounded-2xl bg-cream p-6 shadow-md transition hover:shadow-lg">
-        <div class="flex gap-1 text-paw" role="img" aria-label="Rating 5 dari 5 bintang">
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+        <div class="grid gap-6 md:grid-cols-3">
+
+          <!-- Ulasan 1 -->
+          <figure class="flex flex-col rounded-2xl bg-cream p-6 shadow-md transition hover:shadow-lg">
+            <div class="flex gap-1 text-paw" role="img" aria-label="Rating 5 dari 5 bintang">
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+            </div>
+            <blockquote class="mt-4 flex-1 text-sm leading-relaxed">
+              “Kucing saya biasanya stres kalau dimandikan, tapi di PawCare dia tenang dan pulang dalam keadaan wangi. Timnya sabar sekali.”
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-3">
+              <span class="grid h-12 w-12 flex-none place-items-center rounded-full bg-peach font-heading font-bold text-paw-dark" aria-hidden="true">AR</span>
+              <span class="leading-tight">
+                <span class="block font-heading font-semibold">Anisa Rahma</span>
+                <span class="block text-xs text-ink/70">Pemilik kucing Persia</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <!-- Ulasan 2 -->
+          <figure class="flex flex-col rounded-2xl bg-cream p-6 shadow-md transition hover:shadow-lg">
+            <div class="flex gap-1 text-paw" role="img" aria-label="Rating 5 dari 5 bintang">
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+            </div>
+            <blockquote class="mt-4 flex-1 text-sm leading-relaxed">
+              “Paket Fresh & Care benar-benar sepadan. Bulu anjing saya yang kusut jadi rapi, kukunya juga dipotong. Booking-nya pun mudah.”
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-3">
+              <span class="grid h-12 w-12 flex-none place-items-center rounded-full bg-mint font-heading font-bold text-teal" aria-hidden="true">BP</span>
+              <span class="leading-tight">
+                <span class="block font-heading font-semibold">Bima Pratama</span>
+                <span class="block text-xs text-ink/70">Pemilik anjing golden retriever</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <!-- Ulasan 3 -->
+          <figure class="flex flex-col rounded-2xl bg-cream p-6 shadow-md transition hover:shadow-lg">
+            <div class="flex gap-1 text-paw" role="img" aria-label="Rating 5 dari 5 bintang">
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
+            </div>
+            <blockquote class="mt-4 flex-1 text-sm leading-relaxed">
+              “Pilihan makanan dan aksesorinya lengkap dengan harga ramah di kantong. Saya sekalian beli pasir kucing dan mainan saat antar grooming.”
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-3">
+              <span class="grid h-12 w-12 flex-none place-items-center rounded-full bg-peach font-heading font-bold text-paw-dark" aria-hidden="true">SW</span>
+              <span class="leading-tight">
+                <span class="block font-heading font-semibold">Sari Wulandari</span>
+                <span class="block text-xs text-ink/70">Pelanggan setia sejak 2025</span>
+              </span>
+            </figcaption>
+          </figure>
+
         </div>
-        <blockquote class="mt-4 flex-1 text-sm leading-relaxed">
-          “Paket Fresh & Care benar-benar sepadan. Bulu anjing saya yang kusut jadi rapi, kukunya juga dipotong. Booking-nya pun mudah.”
-        </blockquote>
-        <figcaption class="mt-6 flex items-center gap-3">
-          <span class="grid h-12 w-12 flex-none place-items-center rounded-full bg-mint font-heading font-bold text-teal" aria-hidden="true">BP</span>
-          <span class="leading-tight">
-            <span class="block font-heading font-semibold">Bima Pratama</span>
-            <span class="block text-xs text-ink/70">Pemilik anjing golden retriever</span>
-          </span>
-        </figcaption>
-      </figure>
-
-      <!-- Ulasan 3 -->
-      <figure class="flex flex-col rounded-2xl bg-cream p-6 shadow-md transition hover:shadow-lg">
-        <div class="flex gap-1 text-paw" role="img" aria-label="Rating 5 dari 5 bintang">
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2z"/></svg>
-        </div>
-        <blockquote class="mt-4 flex-1 text-sm leading-relaxed">
-          “Pilihan makanan dan aksesorinya lengkap dengan harga ramah di kantong. Saya sekalian beli pasir kucing dan mainan saat antar grooming.”
-        </blockquote>
-        <figcaption class="mt-6 flex items-center gap-3">
-          <span class="grid h-12 w-12 flex-none place-items-center rounded-full bg-peach font-heading font-bold text-paw-dark" aria-hidden="true">SW</span>
-          <span class="leading-tight">
-            <span class="block font-heading font-semibold">Sari Wulandari</span>
-            <span class="block text-xs text-ink/70">Pelanggan setia sejak 2025</span>
-          </span>
-        </figcaption>
-      </figure>
-
-    </div>
-  </div>
-</section>
-    
-
+      </div>
+    </section>
 
     <section id="faq" class="bg-mint py-16">
       <div class="mx-auto max-w-3xl px-5">
@@ -425,7 +413,6 @@
 
   </main>
 
-
   <footer class="bg-teal py-12 text-cream">
     <div class="mx-auto grid max-w-6xl gap-8 px-5 md:grid-cols-3">
       <div>
@@ -438,6 +425,8 @@
           <li><a class="hover:underline" href="#produk">Produk</a></li>
           <li><a class="hover:underline" href="#grooming">Grooming</a></li>
           <li><a class="hover:underline" href="#booking">Booking</a></li>
+          <li><a class="hover:underline" href="#galeri">Galeri</a></li>
+          <li><a class="hover:underline" href="#testimoni">Testimoni</a></li>
           <li><a class="hover:underline" href="#faq">FAQ</a></li>
         </ul>
       </div>
@@ -456,7 +445,6 @@
     <p class="mx-auto mt-8 max-w-6xl border-t border-cream/30 px-5 pt-4 text-sm text-cream/80">© 2026 PawCare.</p>
   </footer>
 
-
   <div id="modal-paket" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="mp-title">
     <div class="modal-box">
       <button type="button" class="modal-close" data-close aria-label="Tutup">
@@ -473,7 +461,6 @@
       <button type="button" id="mp-book" class="mt-5 w-full rounded-full bg-paw px-6 py-3 font-bold text-white transition hover:bg-paw-dark">Booking Sekarang</button>
     </div>
   </div>
-
 
   <div id="modal-gambar" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Foto diperbesar">
     <div class="modal-box modal-wide">
